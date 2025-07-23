@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Rentabilidade e Juros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora Financeira</h1>
+
+    <section>
+      <h2>Rentabilidade Total</h2>
+      <label>Capital Inicial (€): <input id="inicial1" type="number" step="0.01"></label>
+      <label>Capital Final (€): <input id="final1" type="number" step="0.01"></label>
+      <button onclick="calcTotal()">Calcular</button>
+      <p id="res-total"></p>
+    </section>
+
+    <section>
+      <h2>Rentabilidade Anual (CAGR)</h2>
+      <label>Capital Inicial (€): <input id="inicial2" type="number" step="0.01"></label>
+      <label>Capital Final (€): <input id="final2" type="number" step="0.01"></label>
+      <label>Anos: <input id="anos2" type="number" step="0.01"></label>
+      <button onclick="calcAnual()">Calcular</button>
+      <p id="res-anual"></p>
+    </section>
+
+    <section>
+      <h2>Juros Simples</h2>
+      <label>Capital Inicial (€): <input id="capital_simples" type="number" step="0.01"></label>
+      <label>Taxa de Juro Anual (%): <input id="taxa_simples" type="number" step="0.01"></label>
+      <label>Anos: <input id="anos_simples" type="number" step="0.01"></label>
+      <button onclick="calcJurosSimples()">Calcular</button>
+      <p id="res-simples"></p>
+    </section>
+
+    <section>
+      <h2>Juros Compostos</h2>
+      <label>Capital Inicial (€): <input id="capital_compostos" type="number" step="0.01"></label>
+      <label>Taxa de Juro Anual (%): <input id="taxa_compostos" type="number" step="0.01"></label>
+      <label>Anos: <input id="anos_compostos" type="number" step="0.01"></label>
+      <button onclick="calcJurosCompostos()">Calcular</button>
+      <p id="res-compostos"></p>
+    </section>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
